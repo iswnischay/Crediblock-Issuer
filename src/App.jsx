@@ -1,5 +1,4 @@
-import { HashRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { HashRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";import { useEffect, useState } from "react";
 import Issuer from "./Issuer";
 import Home from "./Home";
 import Login from "./Login"; // Import the Login component
@@ -52,8 +51,8 @@ const App = () => {
       <div className="container">
         <nav className="fixed-top">
           <Link className="ref" to="/">Home</Link>
-          {user && <Link className="ref" to="/issuer">Issuer</Link>} {/* Conditionally render Issuer link */}
-
+          <Link className="ref" to="/issuer">Issuer</Link>
+        
           <button onClick={toggleTheme} className="theme-toggle">
             {theme === "light" ? (
               <i className="bi bi-moon-fill"></i>
